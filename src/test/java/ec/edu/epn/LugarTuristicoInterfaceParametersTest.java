@@ -37,7 +37,7 @@ public class LugarTuristicoInterfaceParametersTest {
     @Test
     public void given_parameters_results_research(){
         LugarTuristicoInterface l = Mockito.mock(LugarTuristicoInterface.class);
-        Mockito.when(l.busquedaLugarTuristico(a)).thenReturn(b);
+        Mockito.when(l.busquedalugarTuristico(a)).thenReturn(b);
         assertEquals(b,c);
     }
 
