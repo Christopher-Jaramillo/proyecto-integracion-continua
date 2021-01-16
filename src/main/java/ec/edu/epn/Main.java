@@ -37,6 +37,68 @@ public class Main {
             System.out.println("Datos de Cliente ->" +clientes[i].toString());
         }
 
+    //--------------------------------- LUGARES TURISTICOS ---------------------------------------------------------------
+
+        LugarTuristico lugares[] = new LugarTuristico[5];
+        String [] medidasLugar1 = {"bioseguridad", "distanciamiento", "aforo limite de personas"};
+        String [] medidasLugar2 = {"bioseguridad", "distanciamiento", "aforo limite de personas"};
+        String [] medidasLugar3 = {"bioseguridad", "distanciamiento", "aforo limite de personas", "Aforo limite en restaurante", "actividades restringidas"};
+        String [] medidasLugar4 = {"bioseguridad", "distanciamiento", "aforo limite de personas", "Aforo limite en restaurante", "actividades restringidas" };
+        String [] medidasLugar5 = {"bioseguridad", "distanciamiento", "aforo limite de personas", "Actividades restringidas"};
+
+        lugares[0] = new LugarTuristico("Salinas",
+                "Playa",
+                "24 Horas",
+                "Domingo a Domingo",
+                "Manabi",
+                (float) 4.8,
+                medidasLugar1,
+                "Una de las mejores playas que he visitado");
+
+        lugares[1] = new LugarTuristico("Atacames",
+                "Playa",
+                "24 Horas",
+                "Domingo a Domingo",
+                "Esmeraldas",
+                (float) 4.3,
+                medidasLugar2,
+                "Playa muy linda, pero un poco descuidad");
+
+        lugares[2] = new LugarTuristico("Chachimbiro",
+                "Piscina",
+                "8 - 18",
+                "Martes a Domingo",
+                "Ibarra",
+                (float) 4.5,
+                medidasLugar3,
+                "Excelentes piscinas variedad de actividades");
+
+        lugares[3] = new LugarTuristico("Papallacta",
+                "Piscinas",
+                "9 - 17",
+                "Martes a Domingo",
+                "Oriente",
+                (float) 4.8,
+                medidasLugar4,
+                "Excelente lugar aguas termaales fantasticas, el clima demasiado frío");
+
+        lugares[4] = new LugarTuristico("Pailon de diablo",
+                "Cascada",
+                "7 - 22",
+                "Domingo a Domingo",
+                "Baños",
+                (float) 4.7,
+                medidasLugar5,
+                "Una de las mejores playas que he visitado");
+
+        System.out.println("\n LUGARES TURISTICOS  \n");
+        for (int i = 0; i< administradores.length; i++){
+            System.out.println("Datos de Cliente ->" + lugares[i].toString());
+        }
+
     }
+
+
+
 
 }
