@@ -93,7 +93,7 @@ public class Main {
 
         System.out.println("\n LUGARES TURISTICOS  \n");
         for (int i = 0; i< administradores.length; i++){
-            System.out.println("Datos de Cliente ->" + lugares[i].toString());
+            System.out.println("Informacion del Lugar ->" + lugares[i].toString());
         }
 
     }
