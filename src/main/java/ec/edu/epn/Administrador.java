@@ -71,8 +71,6 @@ public class Administrador {
     }
 
     public boolean registrarAdministrador(String dni, String nombre, String direccion, String telefono, String correo){
-
-
         if (dni!=null && nombre!=null && direccion!=null && telefono!=null && correo!=null ){
 
             this.setDni(dni);

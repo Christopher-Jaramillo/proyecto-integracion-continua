@@ -8,6 +8,7 @@ public class Cliente {
     public String direccion;
     public String telefono;
     public String correo;
+    public LugarTuristico lugarTuristico = new LugarTuristico();
 
     public Cliente() {
     }
@@ -70,6 +71,8 @@ public class Cliente {
             this.setDireccion(direccion);
             this.setTelefono(telefono);
             this.setCorreo(correo);
+
+            lugarTuristico.registrarCalificacion();
 
             return true;
         }

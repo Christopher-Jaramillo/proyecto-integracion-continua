@@ -9,9 +9,10 @@ public class LugarTuristico {
     public String horarioAtencion;
     public String diasAtencion;
     public String direccion;
-    public float  calificacion;
+    public double  calificacion;
     public String [] medidas;
     public String comentario;
+    public LugarTuristico siguiente;
 
     public LugarTuristico() {
     }
@@ -67,7 +68,7 @@ public class LugarTuristico {
         this.direccion = direccion;
     }
 
-    public float getCalificacion() {
+    public double getCalificacion() {
         return calificacion;
     }
 
@@ -123,4 +124,33 @@ public class LugarTuristico {
                 ", comentario='" + comentario + '\'' +
                 '}';
     }
+
+
+    public void registrarCalificacion() {
+        double cal = 0;
+        int cont = 0;
+
+        while(this != null){
+            calificacion += cal;
+            cont ++;
+        }
+        calificacion = calificacion / cont;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
